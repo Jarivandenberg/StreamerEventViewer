@@ -6,7 +6,7 @@ import { Layout } from 'antd'
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { ActionCableProvider, ActionCableConsumer } from 'react-actioncable-provider'
 const { Header, Content, Footer } = Layout
-const cable = ActionCable.createConsumer('ws://localhost:3000/cable')
+const cable = ActionCable.createConsumer()
 
 export default class App extends React.Component {
   constructor(props) {
