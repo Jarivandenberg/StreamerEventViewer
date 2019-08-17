@@ -8,7 +8,7 @@ class StreamersChannel < ApplicationCable::Channel
       'hub.mode': 'subscribe',
       'hub.callback': "https://rocky-hamlet-64180.herokuapp.com/api/events",
       'hub.topic': "https://api.twitch.tv/helix/users/follows?first=1&to_id=#{params[:streamerId]}",
-      'hub.lease_seconds': 120,
+      'hub.lease_seconds': 86000,
     }.to_json
     resp = Faraday.post(url, body, 'Content-Type' => 'application/json', 'Client-ID' => 'xdemuvcrk5sa2akqef3daut8i3te4n')
     stream_from streamer_channel
