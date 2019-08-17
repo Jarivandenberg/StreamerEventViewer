@@ -33,7 +33,7 @@ Devise.setup do |config|
   config.omniauth :twitch, 'xdemuvcrk5sa2akqef3daut8i3te4n',
                            'pbl7slphxcw2jofepon7lpp6wqh7zh',
                            redirect_uri:
-                           'http://localhost:3000/users/auth/twitch/callback'
+                           'https://rocky-hamlet-64180.herokuapp.com/users/auth/twitch/callback'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and

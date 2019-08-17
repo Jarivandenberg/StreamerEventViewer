@@ -6,7 +6,7 @@ class StreamersChannel < ApplicationCable::Channel
     url = 'https://api.twitch.tv/helix/webhooks/hub'
     body = {
       'hub.mode': 'subscribe',
-      'hub.callback': "http://46621703.ngrok.io/api/events",
+      'hub.callback': "https://rocky-hamlet-64180.herokuapp.com/api/events",
       'hub.topic': "https://api.twitch.tv/helix/users/follows?first=1&to_id=#{params[:streamerId]}",
       'hub.lease_seconds': 120,
     }.to_json

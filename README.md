@@ -1,6 +1,6 @@
 # Twitch Streamer Event Listener
 
-DEMO: [LIVE website]()
+DEMO: [LIVE website](https://rocky-hamlet-64180.herokuapp.com)
 
 ## Technologies used:
 
@@ -10,7 +10,7 @@ DEMO: [LIVE website]()
 - [Yarn](https://yarnpkg.com/lang/en/) : Dependency manager
 - 3rd Party API: [Twitch](https://dev.twitch.tv/docs/)
 - [GitHub website](https://github.com/Jarivandenberg/StreamerEventViewer) Source code
-- [LIVE website]() Deployment done with Heroku.
+- [LIVE website](https://rocky-hamlet-64180.herokuapp.com) Deployment done with Heroku.
 
 ## Project description
 
@@ -21,7 +21,7 @@ After searching for your favorite streamer the application has opened a channel.
 
 ## Hosting on AWS
 
-![StreamerAppOnAWS](https://media.amazonwebservices.com/architecturecenter/AWS_ac_ra_web_01.pdf)
+- [Image](https://media.amazonwebservices.com/architecturecenter/AWS_ac_ra_web_01.pdf) : Image
 
 For hosting on AWS we would need to set up some things. I will be explaining the components one by one.
 - EC2 Group -> We will be using this to create a group for our application. This group is a web service that provides resizeable computing capacity.
