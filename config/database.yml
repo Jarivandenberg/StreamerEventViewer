@@ -1,7 +1,7 @@
-
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: jarivoormedia
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -18,4 +18,4 @@ production:
   <<: *default
   database: StreamerEventViewer_production
   username: StreamerEventViewer
-  password: <%= ENV['STREAMEREVENTVIEWER_DATABASE_PASSWORD'] %>
+  password: <%= ENV['StreamerEventViewer_DATABASE_PASSWORD'] %>
