@@ -5,9 +5,6 @@ import TwitchApi from './services/TwitchApi'
 import { Layout } from 'antd'
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { ActionCableProvider, ActionCableConsumer } from 'react-actioncable-provider'
-
-import 'antd/dist/antd.css'
-
 const { Header, Content, Footer } = Layout
 const cable = ActionCable.createConsumer('ws://localhost:3000/cable')
 
